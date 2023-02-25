@@ -41,6 +41,6 @@ it('show courses by release date', function () {
     get(route('home'))
         ->assertSeeTextInOrder([
             $newestReleasedCourse->title,
-            $releasedCourse->title
+            $releasedCourse->title,
         ]);
 });
